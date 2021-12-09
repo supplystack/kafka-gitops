@@ -14,3 +14,5 @@ RUN apk update && apk upgrade && \
     rm -rf /var/cache/apk/*
 
 COPY --from=kafka-gitops /opt/kafka-gitops /usr/local/bin/kafka-gitops
+
+LABEL org.opencontainers.image.source https://github.com/supplystack/kafka-gitops
