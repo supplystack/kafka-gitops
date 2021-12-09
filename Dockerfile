@@ -16,3 +16,4 @@ RUN apk update && apk upgrade && \
 COPY --from=kafka-gitops /opt/kafka-gitops /usr/local/bin/kafka-gitops
 
 LABEL org.opencontainers.image.source https://github.com/supplystack/kafka-gitops
+LABEL org.opencontainers.image.description Combines https://github.com/devshawn/kafka-gitops and https://github.com/mikefarah/yq in a single docker image
