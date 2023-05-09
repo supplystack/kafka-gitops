@@ -1,6 +1,6 @@
 ## What is this?
 
-This repo's purpose is to creates a new docker image that combines the following projects:
+This repo's purpose is to create a new docker image that combines the following projects:
 * https://github.com/mikefarah/yq: a lightweight and portable command-line YAML processor
 * https://github.com/devshawn/kafka-gitops: an Apache Kafka resources-as-code tool which allows you to automate the management of your Apache Kafka topics and ACLs from version controlled code. It allows you to define topics and services through the use of a desired state file, much like Terraform and other infrastructure-as-code tools.
 
