@@ -1,4 +1,4 @@
-FROM alpine:3.15 as kafka-gitops
+FROM alpine:3.18 as kafka-gitops
 
 WORKDIR /opt
 
@@ -7,7 +7,7 @@ RUN apk --update --no-cache add curl && \
     unzip /opt/kafka-gitops.zip && \
     chmod 755 /opt/kafka-gitops
 
-FROM alpine:3.15
+FROM alpine:3.18
 
 RUN apk update && apk upgrade && \
     apk add yq openjdk8-jre && \
