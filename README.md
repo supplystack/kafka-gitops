@@ -3,10 +3,12 @@
 This repo's purpose is to create a new docker image that combines the following projects:
 * https://github.com/mikefarah/yq: a lightweight and portable command-line YAML processor
 * https://github.com/devshawn/kafka-gitops: an Apache Kafka resources-as-code tool which allows you to automate the management of your Apache Kafka topics and ACLs from version controlled code. It allows you to define topics and services through the use of a desired state file, much like Terraform and other infrastructure-as-code tools.
+* https://github.com/cli/cli: is GitHub on the command line. It brings pull requests, issues, and other GitHub concepts to the terminal next to where you are already working with git and your code.
 
 ## Why?
 
 While `kafka-gitops` is a very powerful tool, daily used to manage about a 1000 kafka topics at SupplyStack, it lacks support to split the state file into different, smaller and more manageable files. This is where `yq` comes into the picture.
+The GitHub CLI can be used for PR decoration. 
 
 ## Usage
 
