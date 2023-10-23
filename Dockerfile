@@ -10,7 +10,7 @@ RUN apk --update --no-cache add curl && \
 FROM alpine:3.18.4
 
 RUN apk update && apk upgrade && \
-    apk add yq github-cli openjdk17-jre && \
+    apk add bash yq github-cli openjdk17-jre && \
     rm -rf /var/cache/apk/*
 
 COPY --from=kafka-gitops /opt/kafka-gitops /usr/local/bin/kafka-gitops
