@@ -109,6 +109,3 @@ topics:
 
 ### Future plans
 A GitHub Action which is even simpler to use might one day exist. Feel free to contribute.
-
-
-
